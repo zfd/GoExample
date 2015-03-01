@@ -48,3 +48,4 @@ bin
 pkg
 *.iml
 out
+*.log

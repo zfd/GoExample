@@ -1,12 +1,12 @@
 package main
 
 /**
- * Created by Zf_D on 2015-02-26
+ * Created by Zf_D on 2015-02-28
  */
 import (
-    "fmt"
+    "logger"
 )
 
 func main() {
-    fmt.Println("hello")
+    logger.Debug("hehe")
 }
