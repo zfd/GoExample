@@ -4,9 +4,9 @@ package main
  * Created by Zf_D on 2015-02-28
  */
 import (
-    "logger"
+    "fmt"
 )
 
 func main() {
-    logger.Debug("hehe")
+    fmt.Println("hello")
 }

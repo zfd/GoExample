@@ -26,7 +26,8 @@ func Test_output(t *testing.T) {
 func Test_sizeBackup(t *testing.T) {
 	defer logFile.Close()
 	SetFilePath("log\\testSize", "log.log")
-	SetSizeBackup(2, 1 * KB)
+	SetSizeBackup(1, 30 * KB)
+	SetConsoleFlag(false)
 	timer := time.NewTicker(1 * time.Second)
 	i := 0
 	for {
@@ -50,6 +51,7 @@ func Test_dailyBackup(t *testing.T) {
 	defer logFile.Close()
 	SetFilePath("log\\testDaily", "log.log")
 	SetDailyBackup(2)
+	SetConsoleFlag(false)
 	timer := time.NewTicker(1 * time.Second)
 	i := 0
 	for {
