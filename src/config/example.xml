@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <server>
+        <address>127.0.0.1</address>
+        <port>8080</port>
+    </server>
+    <log level="debug">
+        <file name="log.log" size="1024"/>
+    </log>
+</config>
